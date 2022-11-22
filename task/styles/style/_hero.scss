@@ -1,0 +1,47 @@
+.hero {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+    background: url('../../img/hero.png') no-repeat center / cover;
+
+    &__body {
+        color: white;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 96px;
+        line-height: 100%;
+        font-weight: 700;
+        @media(max-width: 580px){
+            font-size: 64px;
+        }
+        @media(max-width: 480px){
+            font-size: 48px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        @media(max-width: 580px){
+            font-size: 48px;
+        }
+        @media(max-width: 480px){
+            font-size: 36px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        max-width: fit-content;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: white;
+        padding: 24px 48px;
+        border-radius: 40px;
+        background-color: $pink;
+        margin-top: 48px;
+    }
+}
